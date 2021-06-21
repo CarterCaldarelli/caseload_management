@@ -335,8 +335,8 @@ from    student_table
                  , trunc(lgpa_overall_gpa, 2) as gpa
            from    gpa_table
           where    lgpa_level_code = 'UG') ug_gpa
-      , t_bi_hp3
-      , termxwalk
+      , hp3_table
+      , terms
       , p_ant_grad_xwalk
       , t_ant_grad_xwalk
 where    stu_pidm = recent.pidm    
